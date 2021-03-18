@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+body{
+    background: linear-gradient(to bottom, #112b4e, #1b617c);
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #112b4e;
+    z-index: 2000;
+}
+header ul li{
+    display: inline-block;
+    position: relative;
+    left: 580px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 25px;
+}
+#proyectos{
+    width: 100%;
+    margin-top: 250px;
+}
+#inicio{
+    margin-left: auto;
+    width: 100%;
+    height: 657px;
+    color: #ff5b00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#inicio div{
+    padding-left: 10px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 3px solid #ff5b00;
+}
+.container li a{
+    transition: all 300ms ease-in-out;
+}
+.container li a::before{
+    content: var(--l);
+    position:absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+.container li a::after{
+    content: var(--l);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+}
+.container li a:hover{
+    filter: contrast(350%);
+}
+.container li a:nth-child(1){
+    color: #ff5b00;
+}
+#proyecto{
+    background-color: #ff5b00;
+    color: white;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    height: 250px;
+}
+
+#proyectos h1, #proyectos hr{
+    color: white;
+}
+#proyecto h3{
+    margin-top: 10px;
+}
+#botonProyecto{
+    color: #ff5b00;
+    border: 1px solid #ff5b00;   
+}
+#botonProyecto:hover{
+    background-color: #ff5b00;
+    color: antiquewhite;
+}
+#aboutText{
+    color: white;
+    display: inline-block;
+    width: 45%;
+}
+#aboutText h5{
+    
+    line-height: 27px;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#conocimientos{
+    margin-left: 4%;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    height: 230px;
+    border-radius: 100px 0 0 100px;
+    border: 10px solid #ff5b00;
+    background-color: #ff5b00;
+    color: white;
+}
+#button{
+    border: 1px solid #ff5b00; color: #ff5b00;
+    width: 100%;
+    margin-bottom: 25px;
+}
+#button:hover{
+    background: #ff5b00;
+    color: beige;
+}
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
+}
+#contacto{
+    color: beige;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#textoContacto{
+    width: 50%;
+    ;
+}
+#textoContacto a{
+    color:#ff5b00;
+}
+#textoContacto a:hover{
+    color: beige;
+}
