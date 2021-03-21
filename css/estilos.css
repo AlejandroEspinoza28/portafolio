@@ -6,6 +6,12 @@
 body{
     background: linear-gradient(to bottom, #112b4e, #1b617c);
 }
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
 header{
     position: fixed;
     width: 100%;
